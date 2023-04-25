@@ -1,60 +1,51 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Login Page</title>
-   <!--Made with love by Mutiullah Samim -->
-   
-	<!--Bootsrap 4 CDN-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <!--Fontawesome CDN-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<html lang="en">
 
-	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="./css/styles2.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Inicio</title>
+    
 </head>
-<body>
-<div class="container">
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h3>Sign In</h3>
-				<div class="d-flex justify-content-end social_icon">
-					
-				</div>
-			</div>
-			<div class="card-body">
-				<form method="post" action="./db/functions.php" id="loginform" >
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						</div>
-						<input type="text" class="form-control" name="usr" placeholder="username">
-						
+    
+<body>	
+    
+	
+	<div class="container">		
+	<div class="container">
+  <div class="row mt-5 mb-5">
+	<br><br>
+  </div>
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col">
+	<div class="card text-center mt-5 ml-5" style="width: 18rem;">
+	<form  method="post" action="./db/functions.php" id="loginform">
+					 <div class="mb-1"> 
+						<label for="exampleInputEmail1" class="form-label">Name</label> 
+						<input type="text" class="form-control " name="usr" id="usr" aria-describedby="emailHelp"> </div> 
+						<div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Password</label> 
+						<input type="password" class="form-control" name="pss" id="exampleInputPassword1"> </div> 
+						<input type="submit" id="button" name="submit" class="  button btn-danger submit" value="submit"> 
+					</form>
+
 					</div>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
-						</div>
-						<input type="password" class="form-control" name="pss" placeholder="password">
-					</div>
-					<div class="row align-items-center remember">
-						<input type="checkbox">Remember Me
-					</div>
-					<div class="form-group">
-						<input type="submit" name="submit" value="Login" class="btn float-right login_btn">
-					</div>
-				</form>
-			</div>
-			
-			</div>
-		</div>
+    </div>
+    <div class="col">
 	</div>
+    </div>
+  </div>
+</div>
+	
 </div>
 </body>
+
 </html>
+
+
